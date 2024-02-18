@@ -1,6 +1,7 @@
 # A cluster-based disambiguation method using pose consistency verification for structure from motion
 
 If you use this project for your research, please cite:
+
 A cluster-based disambiguation method using pose consistency verification for structure from motion
 ```
 @article{article,

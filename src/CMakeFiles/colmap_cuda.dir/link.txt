@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcolmap_cuda.a  CMakeFiles/colmap_cuda.dir/util/cuda.cc.o CMakeFiles/colmap_cuda.dir/util/cudacc.cc.o
+/usr/bin/ranlib libcolmap_cuda.a

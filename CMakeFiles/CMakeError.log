@@ -1,0 +1,76 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ae830/fast 
+/usr/bin/make -f CMakeFiles/cmTC_ae830.dir/build.make CMakeFiles/cmTC_ae830.dir/build
+make[1]: Entering directory '/home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae830.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ae830.dir/CheckSymbolExists.c.o   -c /home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ae830
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae830.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ae830.dir/CheckSymbolExists.c.o  -o cmTC_ae830 
+CMakeFiles/cmTC_ae830.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ae830.dir/build.make:86: recipe for target 'cmTC_ae830' failed
+make[1]: *** [cmTC_ae830] Error 1
+make[1]: Leaving directory '/home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_ae830/fast' failed
+make: *** [cmTC_ae830/fast] Error 2
+
+File /home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_329d6/fast 
+/usr/bin/make -f CMakeFiles/cmTC_329d6.dir/build.make CMakeFiles/cmTC_329d6.dir/build
+make[1]: Entering directory '/home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_329d6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_329d6.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_329d6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_329d6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_329d6.dir/CheckFunctionExists.c.o  -o cmTC_329d6 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_329d6.dir/build.make:86: recipe for target 'cmTC_329d6' failed
+make[1]: *** [cmTC_329d6] Error 1
+make[1]: Leaving directory '/home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_329d6/fast' failed
+make: *** [cmTC_329d6/fast] Error 2
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cf4fe/fast 
+/usr/bin/make -f CMakeFiles/cmTC_cf4fe.dir/build.make CMakeFiles/cmTC_cf4fe.dir/build
+make[1]: Entering directory '/home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf4fe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_cf4fe.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cf4fe
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf4fe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    -rdynamic CMakeFiles/cmTC_cf4fe.dir/CheckFunctionExists.c.o  -o cmTC_cf4fe 
+CMakeFiles/cmTC_cf4fe.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cf4fe.dir/build.make:86: recipe for target 'cmTC_cf4fe' failed
+make[1]: *** [cmTC_cf4fe] Error 1
+make[1]: Leaving directory '/home/gy/DAGSfM_merge_v3/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_cf4fe/fast' failed
+make: *** [cmTC_cf4fe/fast] Error 2
+
+
